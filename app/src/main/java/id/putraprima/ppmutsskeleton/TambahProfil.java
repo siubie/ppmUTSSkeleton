@@ -25,6 +25,7 @@ public class TambahProfil extends AppCompatActivity {
         btnSaveProfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Profil itemProfil = new Profil(txtNama.getText().toString(),txtNomorTelepon.getText().toString(),txtNim.getText().toString(),txtHobby.getText().toString());
                 itemProfil.save();
             }

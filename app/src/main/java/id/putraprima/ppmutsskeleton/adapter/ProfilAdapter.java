@@ -26,6 +26,6 @@ public class ProfilAdapter extends BaseQuickAdapter<Profil,BaseViewHolder>{
         helper.setText(R.id.nama,item.getNama());
         helper.addOnClickListener(R.id.btnDelete);
         helper.addOnClickListener(R.id.btnEdit);
-
+        helper.addOnClickListener(R.id.nama);
     }
 }

@@ -15,7 +15,7 @@
             android:value="profil.db" />
         <meta-data
             android:name="VERSION"
-            android:value="1" />
+            android:value="2" />
         <meta-data
             android:name="QUERY_LOG"
             android:value="true" />
@@ -31,7 +31,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".TambahProfil" />
-        <activity android:name=".EditProfil"></activity>
+        <activity android:name=".EditProfil" />
+        <activity android:name=".DetailProfil" />
+        <activity android:name=".DaftarPendidikan" />
+        <activity android:name=".TambahPendidikan"></activity>
     </application>
 
 </manifest>

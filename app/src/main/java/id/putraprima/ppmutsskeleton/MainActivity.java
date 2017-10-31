@@ -62,6 +62,16 @@ public class MainActivity extends AppCompatActivity {
                         mAdapter.setNewData(listProfil);
                         mAdapter.notifyDataSetChanged();
                         break;
+                    case R.id.nama:
+                        Intent j = new Intent(getApplicationContext(),DetailProfil.class);
+                        j.putExtra("id",itemProfil.getId());
+                        j.putExtra("nama",itemProfil.getNama());
+                        j.putExtra("nomorTelepon",itemProfil.getNomorTelepon());
+                        j.putExtra("nim",itemProfil.getNim());
+                        j.putExtra("hobby",itemProfil.getHobby());
+                        startActivity(j);
+                        break;
+
                 }
             }
         });
@@ -79,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         listProfil.clear();
-        Log.d("SOKO","Entered");
         listProfil = Profil.listAll(Profil.class);
         mAdapter.setNewData(listProfil);
         mAdapter.notifyDataSetChanged();
